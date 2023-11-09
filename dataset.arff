@@ -1,0 +1,10 @@
+@relation YourRelationName
+
+@attribute age numeric
+@attribute height numeric
+@attribute class {class1, class2, class3}
+
+@Data
+63,187,class1
+37,180,class2
+41,190,class3
