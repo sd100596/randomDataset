@@ -1,0 +1,9 @@
+@relation random
+
+@attribute age numeric
+@attribute hight numeric
+
+@Data
+63,187
+37,180
+41,190
