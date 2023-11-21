@@ -5,7 +5,9 @@ import json
 from io import StringIO
 from pathlib import Path
 
-path_input = Path(os.environ.get("INPUTS", "/data/inputs/algoCustomData.json"))
+path_input = Path(
+    os.path.join(os.environ.get("INPUTS", "/data/inputs"), "algoCustomData.json")
+)
 path_output = Path(os.environ.get("OUTPUTS", "/data/outputs"))
 path_logs = Path(os.environ.get("LOGS", "/data/logs"))
 
