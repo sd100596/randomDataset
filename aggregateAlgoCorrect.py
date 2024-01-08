@@ -23,6 +23,9 @@ result_data = algoCustomData["resultUrls"]
 
 def get_data_from_url(url, headers):
     try:
+        print(f"url : {url}")
+        print("Headers : ")
+        print(headers)
         req = request.Request(url, headers=headers)  # Create a request with headers
         response = request.urlopen(req)
         if response.getcode() == 200:
